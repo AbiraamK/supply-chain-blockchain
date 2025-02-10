@@ -10,7 +10,7 @@ from cryptography.exceptions import InvalidSignature  # For handling invalid sig
 # Initialize Flask application
 app = Flask(__name__)
 
-## Fahim Patel
+
 class SupplyChainBlockchain:
     def __init__(self):
         self.chain = []  # Stores the blockchain (list of blocks)
@@ -106,7 +106,7 @@ class SupplyChainBlockchain:
         """
         return self.chain  # Return the list of blocks
     
-    ## Adam Pham
+
     def sign_transaction(self, private_key, transaction_data):
         """
         Sign the transaction data with the sender's private key
@@ -143,7 +143,7 @@ class SupplyChainBlockchain:
 # Initialize the supply chain blockchain
 blockchain = SupplyChainBlockchain()
 
-## Adam Pham
+
 @app.route('/generate_key', methods=['GET'])
 def generate_key():
     """
@@ -169,7 +169,7 @@ def generate_key():
         'public_key': public_key  # Return public key
     })
 
-## Abiraam Kesavarajah
+
 @app.route('/add_product', methods=['POST'])
 def add_product():
     # Get the data from the POST request
@@ -206,7 +206,7 @@ def add_product():
     }
     return jsonify(response), 200
 
-## Adam Pham
+
 @app.route('/blockchain', methods=['GET'])
 def get_blockchain():
     # Return the full blockchain
@@ -235,7 +235,7 @@ def verify_signature():
     }
     return jsonify(response), 200
 
-## Fahim Patel
+
 @app.route('/track_shipment', methods=['GET'])
 def track_shipment():
     # Get the product name from the query parameter

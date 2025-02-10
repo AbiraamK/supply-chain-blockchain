@@ -155,12 +155,3 @@ GET /track_shipment?product_name=Laptop
 }
 ```
 
-## 🤝 Contributors
-
-- **Fahim Patel** – Blockchain structure & shipment tracking
-- **Abiraam Kesavarajah** – Transactions & mining mechanism
-- **Adam Pham** – Digital signatures & key management
-
-## 🐟 License
-
-This project is licensed under the **MIT License**.
